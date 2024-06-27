@@ -1,0 +1,106 @@
+.courses-container {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.courses-container.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none; /* Prevent interaction during loading */
+}
+
+.courses-page {
+  position: relative;
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+  background: url("../../img/course-bg.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 20px; /* Add padding to ensure content is not flush with the edges */
+}
+
+.courses-header {
+  color: white;
+  font-weight: bolder;
+  font-size: 4.5rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.courses-sub {
+  color: white;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: left;
+  margin: 40px 0 20px;
+}
+
+.courses-rows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.courses-col-md-6 {
+  flex: 1 1 30%; /* Adjust the width as needed */
+  display: flex;
+  justify-content: center;
+}
+
+.courses-cards {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.courses-card-img-top {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.courses-card-img-top::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  filter: brightness(0.5);
+}
+
+.courses-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.courses-card-body h5 {
+  font-weight: bold;
+}
+
+.courses-card-body p {
+  margin-bottom: 20px;
+}
+
+.courses-bg-primary {
+  background-color: #2b3991 !important;
+}
+
+.courses-btn-light {
+  color: #2b3991;
+  background-color: #fea92c;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .courses-col-md-6 {
+    flex: 1 1 100%;
+  }
+}
