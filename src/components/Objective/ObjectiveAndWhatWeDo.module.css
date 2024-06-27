@@ -44,11 +44,6 @@ li {
   margin-bottom: 10px;
 }
 
-li:before {
-  content: "•";
-  color: #fca311;
-  padding-right: 10px;
-}
 
 @media (max-width: 768px) {
   .objectiveSection,
