@@ -95,6 +95,8 @@
   border: none;
   border-radius: 5px; /* Round the button corners */
   padding: 10px 20px; /* Adjust padding as needed */
+  width: 150px; /* Set a fixed width for consistency */
+  font-size: 1rem; /* Ensure consistent font size */
 }
 
 @keyframes float {
@@ -121,5 +123,11 @@
 
   .caregiver-tab:last-child {
     margin-bottom: 0; /* Remove bottom margin from the last tab */
+  }
+
+  .caregiver-tab .image-container .btn {
+    width: 150px; /* Maintain the same width for mobile devices */
+    padding: 10px 20px; /* Ensure padding remains consistent */
+    font-size: 1rem; /* Maintain font size */
   }
 }
