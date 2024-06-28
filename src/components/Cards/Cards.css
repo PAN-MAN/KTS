@@ -3,51 +3,49 @@
 }
 
 .course-header {
-  text-align: center; /* Center align the header */
-  margin-bottom: 2rem; /* Add margin at the bottom for spacing */
+  text-align: center;
+  margin-bottom: 2rem;
   font-weight: bolder;
 }
 
 .caregiver-tabs-container {
-  padding: 2rem 0; /* Add padding to the container */
+  padding: 2rem 0;
 }
 
 .tabs-wrapper {
   display: flex;
   justify-content: center;
-  gap: 1rem; /* Adjust gap between tabs */
-  margin-bottom: 2rem; /* Add margin at the bottom to separate rows */
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .caregiver-tab {
-  max-width: 500px; /* Increase the max-width for larger tabs */
-  width: calc(
-    50% - 0.5rem
-  ); /* Ensure the tab takes half of the container width with some gap */
+  max-width: 500px;
+  width: calc(50% - 0.5rem);
   text-align: center;
-  overflow: hidden; /* Ensure content does not overflow */
-  margin-bottom: 2rem; /* Add margin at the bottom to separate rows */
-  margin-right: 1rem; /* Add margin on the right to create horizontal gap */
-  border-radius: 15px; /* Make the tab corners round */
-  border: 1px solid #243673; /* Add border around the card */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a slight shadow for better visual separation */
+  overflow: hidden;
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+  border-radius: 15px;
+  border: 1px solid #243673;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .caregiver-tab:last-child {
-  margin-right: 0; /* Remove margin from the last tab to prevent extra gap */
+  margin-right: 0;
 }
 
 .caregiver-tab .tab-header {
-  font-size: 1.75rem; /* Increase font size for larger tabs */
+  font-size: 1.75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #2b3991; /* Match background color to the first tab */
+  background-color: #2b3991;
   color: white;
-  border-top-left-radius: 15px; /* Round the top-left corner */
-  border-top-right-radius: 15px; /* Round the top-right corner */
-  padding: 1rem 0; /* Add padding for better spacing */
-  border: 1px solid #243673; /* Add border around the card */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 1rem 0;
+  border: 1px solid #243673;
 }
 
 .caregiver-tab .icon-container {
@@ -56,47 +54,48 @@
   align-items: center;
   background-color: #f39c12;
   border-radius: 50%;
-  width: 70px; /* Increase width for larger tabs */
-  height: 70px; /* Increase height for larger tabs */
-  margin-top: 10px; /* Add some margin to position the icon */
-  box-shadow: 0 0 0 5px white; /* Add white border around the icon */
+  width: 70px;
+  height: 70px;
+  margin-top: 10px;
+  box-shadow: 0 0 0 5px white;
 }
 
 .caregiver-tab .icon-container:hover {
-  animation: float 0.5s ease-in-out infinite; /* Apply float animation on hover */
+  animation: float 0.5s ease-in-out infinite;
 }
 
 .caregiver-tab .icon-container i {
   color: #fff;
-  font-size: 2.5rem; /* Increase icon size for larger tabs */
+  font-size: 2.5rem;
 }
 
 .caregiver-tab .image-container {
   position: relative;
   text-align: center;
-  height: 300px; /* Increase height for larger image container */
-  overflow: hidden; /* Hide overflow to maintain fixed height */
-  border-bottom-left-radius: 15px; /* Round the bottom-left corner */
-  border-bottom-right-radius: 15px; /* Round the bottom-right corner */
+  height: 300px;
+  overflow: hidden;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .caregiver-tab .image-container img {
   width: 100%;
-  height: 100%; /* Ensure the image fills the container */
-  object-fit: cover; /* Cover the container without stretching */
+  height: 100%;
+  object-fit: cover;
 }
 
 .caregiver-tab .image-container .btn {
   position: absolute;
-  bottom: 10px; /* Adjust to move the button upwards */
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #2b3991;
   border: none;
-  border-radius: 5px; /* Round the button corners */
-  padding: 10px 20px; /* Adjust padding as needed */
-  width: 150px; /* Set a fixed width for consistency */
-  font-size: 1rem; /* Ensure consistent font size */
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
 }
 
 @keyframes float {
@@ -113,21 +112,37 @@
 
 @media (max-width: 576px) {
   .tabs-wrapper {
-    flex-direction: column; /* Stack tabs vertically on smaller screens */
+    flex-direction: column;
   }
 
   .caregiver-tab {
-    width: 100%; /* Ensure each tab takes full width */
-    max-width: none; /* Remove max-width restriction */
+    width: 100%;
+    max-width: none;
   }
 
   .caregiver-tab:last-child {
-    margin-bottom: 0; /* Remove bottom margin from the last tab */
+    margin-bottom: 0;
   }
 
   .caregiver-tab .image-container .btn {
-    width: 150px; /* Maintain the same width for mobile devices */
-    padding: 10px 20px; /* Ensure padding remains consistent */
-    font-size: 1rem; /* Maintain font size */
+    bottom: 20px;
+    border-radius: 5px;
+    padding: 12px 24px;
+    width: auto;
+    min-width: 150px;
+    font-size: 1rem;
+    white-space: nowrap;
+    color: white;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 2560px) {
+  .caregiver-tab .image-container .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    min-width: 150px;
+    border-radius: 5px;
+    width: auto;
   }
 }
