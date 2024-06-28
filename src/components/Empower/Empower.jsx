@@ -57,13 +57,13 @@ const Empower = () => {
                                 <i className="fas fa-atom"></i>
                             </div>
                             <h5 className="card-title">Core Values</h5>
-                            <hr className="divider" />
+                            <hr className="divider" /><br/>
                             <p className="card-text">
-                                Excellence<br />
-                                Diversity<br />
-                                Inclusiveness<br />
-                                Respect<br />
-                                Innovation<br />
+                                Excellence<br /><br/>
+                                Diversity<br /><br/>
+                                Inclusiveness<br /><br/>
+                                Respect<br /><br/>
+                                Innovation<br /><br />
                                 Creativity
                             </p>
                         </div>
