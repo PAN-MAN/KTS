@@ -5,18 +5,28 @@
 }
 
 .navbar {
-  padding: 15px 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   z-index: 9999;
 }
 
+.navbar-brand{
+  margin-left: 70px;
+}
+
 .navbar-brand img {
-  max-height: 50px;
+  max-height: 60px;
   width: auto;
 }
 
 .nav-item {
-  margin-right: 20px;
-  font-weight: bold;
+  margin-right: 50px;
+  font-weight: bolder;
+  font-size: medium;
+}
+.collapse{
+  padding-top: 10px;
+  padding-left: 20px;
 }
 
 .nav-item:hover {
@@ -33,7 +43,7 @@
 }
 
 .social-icons a {
-  margin-right: 15px;
+  margin-right: 40px;
   color: #2a3a91;
 }
 
