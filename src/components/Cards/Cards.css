@@ -113,6 +113,7 @@
 @media (max-width: 576px) {
   .tabs-wrapper {
     flex-direction: column;
+    padding: 15px;
   }
 
   .caregiver-tab {
