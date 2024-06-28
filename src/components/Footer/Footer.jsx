@@ -34,19 +34,19 @@ const Footer = () => {
                         <div className="contact-details">
                             <p className="fs-5">
                                 <div className="phone" style={{ textDecoration: 'none', color: 'black' }}>
-                                    <i className="fas fa-phone-alt me-3" style={{ textDecoration: 'none', color: '2b3991' }}></i>
+                                    <i className="fas fa-phone-alt me-3" style={{ textDecoration: 'none', color: '#2b3991' , fontSize:'smaller'}}></i>
                                     +977 01 5912297
                                 </div>
                             </p>
                             <p className="fs-5">
                                 <i className="fas fa-envelope me-3" style={{ textDecoration: 'none', color: '#2b3991' }}></i>
-                                <a href="mailto:info@ktsnepal.com" target="_blank" style={{ textDecoration: 'none', color: 'black' }}>
+                                <a href="mailto:info@ktsnepal.com" target="_blank" style={{ textDecoration: 'none', color: 'black', fontSize:'smaller' }}>
                                     info@ktsnepal.com
                                 </a>
                             </p>
                             <p className="fs-5">
                                 <i className="fas fa-map-marker-alt me-3" style={{ textDecoration: 'none', color: '#2b3991' }}></i>
-                                <a href="https://maps.app.goo.gl/rM3pUwdj9aKmL9cm9" target="_blank" style={{ textDecoration: 'none', color: 'black' }}>
+                                <a href="https://maps.app.goo.gl/rM3pUwdj9aKmL9cm9" target="_blank" style={{ textDecoration: 'none', color: 'black', fontSize:'smaller' }}>
                                     Sukedhara, Kathmandu, Nepal
                                 </a>
                             </p>
