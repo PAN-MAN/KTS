@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import LoadingScreen from '../LoadingScreen/LoadingScreen'; // Adjust path as necessary
-import CardComponent from './CourseCard'; // Adjust path as necessary
+import CourseCard from './CourseCard'; // Adjust path as necessary
 import './Courses.css'; // Adjust path as necessary
 
 import image1 from '../../img/Caregiver.jpg';  // Update the paths to your images
@@ -29,12 +29,14 @@ const Courses = () => {
         {
             image: image1,
             title: 'Caregiver / Aged Care Courses',
-            description: 'Caregiver training is designed to produce competent human resources equipped with knowledge, skills, and attitudes related to the caregiving occupation.'
+            description: 'Caregiver training is designed to produce competent human resources equipped with knowledge, skills, and attitudes related to the caregiving occupation.',
+            link: '/caregiver'
         },
         {
             image: image2,
             title: 'Certificate III in Individual Support (Ageing and Disability)',
-            description: 'This course boosts skills in providing personalized care to the elderly in community and residential settings, addressing aging and disability-related needs with high-quality support and compassion.'
+            description: 'This course boosts skills in providing personalized care to the elderly in community and residential settings, addressing aging and disability-related needs with high-quality support and compassion.',
+            link: '/individual-support'
         }
     ];
 
@@ -42,27 +44,35 @@ const Courses = () => {
         {
             image: image3,
             title: 'Barista',
-            description: 'Learn the art of making perfect coffee.'
+            description: 'Learn the art of making perfect coffee.',
+            link: '/barista'
         },
         {
             image: image4,
             title: 'Commercial Cook / Baker',
-            description: 'Become a skilled commercial cook or baker.'
+            description: 'Become a skilled commercial cook or baker.',
+            link: '/commercial-cook'
         },
         {
             image: image5,
             title: 'Bartender',
-            description: 'Master the skills of bartending.'
+            description: 'Master the skills of bartending.',
+            link: '/bartender'
+
         },
         {
             image: image6,
             title: 'Waiter / Waitress',
-            description: 'Train to be an efficient waiter or waitress.'
+            description: 'Train to be an efficient waiter or waitress.',
+            link: '/waiter'
+
         },
         {
             image: image7,
             title: 'Housekeeping Cleaner',
-            description: 'Learn professional housekeeping skills.'
+            description: 'Learn professional housekeeping skills.',
+            link: '/housekeeping'
+
         }
     ];
 
@@ -75,29 +85,35 @@ const Courses = () => {
                     <title>Courses - Kathmandu Technical School</title>
                 </Helmet>
                 <div className='courses-page'>
-                    <h1 className='courses-header'>Our Courses</h1>
+                    <h1 className='course-header'>Our Courses</h1>
 
-                    <h3 className='courses-sub'>Caregiver / Aged Care Courses</h3>
-                    <div className="courses-rows">
-                        {caregiverCourses.map((card, index) => (
-                            <CardComponent
-                                key={index}
-                                image={card.image}
-                                title={card.title}
-                                description={card.description}
-                            />
+                    <h3 className='course-sub'>Caregiver / Aged Care Courses</h3>
+                    <div className="course-rows">
+                        {caregiverCourses.map((course, index) => (
+                            <div key={index} className="course-col">
+                                <CourseCard
+                                    image={course.image}
+                                    title={course.title}
+                                    description={course.description}
+                                    link={course.link}
+
+                                />
+                            </div>
                         ))}
                     </div>
 
-                    <h3 className='courses-sub'>Hospitality Courses</h3>
-                    <div className="courses-rows">
-                        {hospitalityCourses.map((card, index) => (
-                            <CardComponent
-                                key={index}
-                                image={card.image}
-                                title={card.title}
-                                description={card.description}
-                            />
+                    <h3 className='course-sub'>Hospitality Courses</h3>
+                    <div className="course-rows">
+                        {hospitalityCourses.map((course, index) => (
+                            <div key={index} className="course-col">
+                                <CourseCard
+                                    image={course.image}
+                                    title={course.title}
+                                    description={course.description}
+                                    link={course.link}
+
+                                />
+                            </div>
                         ))}
                     </div>
                 </div>

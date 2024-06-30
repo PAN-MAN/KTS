@@ -25,7 +25,7 @@ const App = () => {
         <Route path="/2080-81" element={<Two />} />
         <Route path='*' element={<ErrorPage />} />
         <Route path='/bartender' element={<Bartender />} />
-        <Route path='/certificate' element={<Certificate />} />
+        <Route path='/individual-support' element={<Certificate />} />
       </Routes>
     </Router>
   );
