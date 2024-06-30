@@ -1,0 +1,212 @@
+.unique-course-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.unique-course-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.unique-course-details {
+    padding: 20px;
+}
+
+.unique-course-details h1 {
+    font-size: 75px;
+    font-weight: bolder;
+    color: #2b3991;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.quote-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.unique-course-description {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2b3991;
+    text-align: justify;
+}
+
+.unique-quote-icon-left,
+.unique-quote-icon-right {
+    position: absolute;
+    font-size: 4rem; /* Adjust font size to your preference */
+    color: #2b3991;
+    margin: 1 2rem;
+}
+
+.btn-primary {
+    background-color: #2b3991;
+    border: none;
+    margin-top: 20px;
+    margin-left: 3px;
+}
+
+.btn-primary:hover {
+    background-color: #1e286e;
+}
+
+.underline {
+    width: 300px;
+    height: 7px;
+    background-color: #fea92c;
+    margin: -10px 0 20px 5px; /* Adjust margins as needed */
+}
+
+.certificate {
+    color: black;
+    background-color: #f9f9f9;
+    line-height: 2;
+    margin-top: 15px;
+    margin-bottom: 1px;
+    text-align: justify;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .unique-course-details h1 {
+        font-size: 60px;
+    }
+
+    .unique-quote-icon-left,
+    .unique-quote-icon-right {
+        font-size: 3rem;
+    }
+
+    .underline {
+        width: 250px;
+        height: 5px;
+    }
+}
+
+@media (max-width: 992px) {
+    .unique-course-details h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .unique-quote-icon-left,
+    .unique-quote-icon-right {
+        font-size: 2.5rem;
+    }
+
+    .unique-course-description {
+        font-size: 1rem;
+    }
+
+    .underline {
+        width: 200px;
+        height: 4px;
+    }
+}
+
+@media (max-width: 768px) {
+    .unique-course-details h1 {
+        font-size: 40px;
+    }
+
+    .unique-quote-icon-left,
+    .unique-quote-icon-right {
+        font-size: 2rem;
+    }
+
+    .unique-course-description {
+        font-size: 0.9rem;
+    }
+
+    .underline {
+        width: 150px;
+        height: 3px;
+    }
+}
+
+@media (max-width: 576px) {
+    .unique-course-details h1 {
+        font-size: 30px;
+    }
+
+    .unique-quote-icon-left,
+    .unique-quote-icon-right {
+        font-size: 1.5rem;
+    }
+
+    .unique-course-description {
+        font-size: 0.8rem;
+    }
+
+    .underline {
+        width: 100px;
+        height: 2px;
+    }
+}
+
+@media (max-width: 425px) {
+    .unique-course-details h1 {
+        font-size: 25px;
+    }
+
+    .unique-quote-icon-left,
+    .unique-quote-icon-right {
+        font-size: 1.2rem;
+    }
+
+    .unique-course-description {
+        font-size: 0.7rem;
+    }
+
+    .underline {
+        width: 80px;
+        height: 2px;
+    }
+}
+
+@media (max-width: 375px) {
+    .unique-course-details h1 {
+        font-size: 20px;
+    }
+
+    .unique-quote-icon-left,
+    .unique-quote-icon-right {
+        font-size: 1rem;
+    }
+
+    .unique-course-description {
+        font-size: 0.6rem;
+    }
+
+    .underline {
+        width: 70px;
+        height: 2px;
+    }
+}
+
+@media (max-width: 320px) {
+    .unique-course-details h1 {
+        font-size: 18px;
+    }
+
+    .unique-quote-icon-left,
+    .unique-quote-icon-right {
+        font-size: 0.8rem;
+    }
+
+    .unique-course-description {
+        font-size: 0.5rem;
+    }
+
+    .underline {
+        width: 60px;
+        height: 2px;
+    }
+}

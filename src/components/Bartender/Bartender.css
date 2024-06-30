@@ -1,0 +1,46 @@
+.unique-course-container1 {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .unique-course-image1 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .unique-course-details1 {
+    padding: 20px;
+  }
+  
+  .unique-course-details1 h1 {
+    font-size: 75px;
+    font-weight: bolder;
+    color: #2b3991;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .unique-course-description1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2b3991;
+    text-align: justify;
+  }
+   
+  .underline1 {
+    width: 300px;
+    height: 7px;
+    background-color: #fea92c;
+    margin: -10px 0 20px 5px; /* Adjust margins as needed */
+  }
+  
+  .certificate1 {
+    color: black;
+    background-color: #f9f9f9;
+    line-height: 2;
+    margin-top: 15px;
+    margin-bottom: 1px;
+    text-align: justify;
+  }

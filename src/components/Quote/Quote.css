@@ -28,8 +28,8 @@
 
 .quote-icon-left {
   position: absolute;
-  top: -30px; /* Adjust position to the top left */
-  left: -45px; /* Adjust position to the left */
+  top: -45px; /* Adjust position to the top left */
+  left: -70px; /* Adjust position to the left */
   font-size: 3rem; /* Set a larger font size for the icons */
   color: #f7a721; /* Color of the quote icons */
 }
